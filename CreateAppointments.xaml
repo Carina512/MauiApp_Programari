@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vet_Clinic.CreateAppointments"
+             Title="Fa-ti o programare!">
+    <StackLayout Margin="20, 0">
+        <Label Text="Denumire" FontSize="14" Margin="0,5" />
+        <Editor Text="{Binding Title}"
+                HeightRequest="70" />
+        <Label Text="Motivul Programarii" FontSize="14" Margin="0,5" />
+        <Editor Text="{Binding ReasonOfVisit}"
+                HeightRequest="70" />
+        <Label Text="Data si ora" FontSize="14" Margin="0,5" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <DatePicker x:Name="datePicker" Margin="0,5,5,5" Date="{Binding DateTime}"/>
+            <TimePicker x:Name="timePicker" Margin="5,5,0,5" Time="{Binding DateTime}" Grid.Column="1" />
+        </Grid>
+      
+        <Label Text="Alege un doctor" FontSize="14" Margin="0,5" />
+        <Picker x:Name="DoctorPicker" Margin="0,5"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vet_Clinic.DespreNoi"
+             Title="Despre Noi">
+    <StackLayout Padding="20">
+
+        <Label Text="Bine ați venit la Cabinetul Veterinar PetLife!"
+               FontSize="Title"
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,0,0,10" />
+
+        <Label Text="Suntem dedicați să oferim cele mai bune servicii medicale pentru animalele de companie, contribuind astfel la bunăstarea și sănătatea acestora. La Cabinetul Veterinar PetLife, ne preocupăm profund de fiecare animal și de legătura specială pe care o au cu stăpânii lor."
+               Margin="0,0,0,10" />
+
+        <Label Text="Echipa noastră de medici veterinari și personal calificat este aici pentru a vă oferi îngrijiri veterinare de înaltă calitate. Cu experiență vastă și o abordare empatică, ne străduim să oferim soluții medicale inovatoare și tratamente personalizate pentru fiecare pacient."
+               Margin="0,0,0,10" />
+
+        <Label Text="La Cabinetul Veterinar PetLife, punem accent pe comunicare și relaționare deschisă cu clienții noștri. Ne dorim să vă oferim informații complete despre sănătatea și bunăstarea animalului dumneavoastră și să vă sprijinim în luarea deciziilor pentru îngrijirea optimă a acestuia."
+               Margin="0,0,0,10" />
+
+        <Label Text="Indiferent dacă aveți nevoie de o consultație de rutină, îngrijire medicală de urgență sau orice alt serviciu veterinar, suntem aici să vă ajutăm și să vă oferim soluții adaptate nevoilor specifice ale animalului dumneavoastră."
+               Margin="0,0,0,10" />
+
+        <Label Text="Vă invităm să ne vizitați la cabinet pentru a vă întâmpina cu drag și pentru a vă oferi servicii veterinare de încredere și de cea mai bună calitate."
+               Margin="0,0,0,10" />
+
+        <Label Text="Cu dragoste pentru animale și angajament pentru sănătatea lor,"
+               Margin="0,10,0,0"
+               
+               HorizontalOptions="EndAndExpand" />
+
+        <Label Text="Echipa Cabinetului Veterinar PetLife"
+               Margin="0,0,0,20"
+               HorizontalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>
